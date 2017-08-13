@@ -42,12 +42,18 @@ chuffed/globals/alldiff.c
 chuffed/globals/template.c
 chuffed/globals/directives.c
 chuffed/globals/cumulative.c
+chuffed/globals/cumulativeCalendar.c
 chuffed/globals/disjunctive.c
 chuffed/globals/regular.c
 chuffed/globals/lex.c
 chuffed/globals/table.c
+chuffed/globals/subcircuit.c
 chuffed/mdd/MDD.c
 chuffed/mdd/mdd_prop.c
+chuffed/mdd/MurmurHash3.c
+chuffed/mdd/opcache.c
+chuffed/mdd/weighted_dfa.c
+chuffed/mdd/wmdd_prop.c
 chuffed/mip/mip.c
 chuffed/mip/recalc.c
 chuffed/mip/simplex.c
@@ -90,12 +96,18 @@ chuffed/globals/alldiff.c
 chuffed/globals/template.c
 chuffed/globals/directives.c
 chuffed/globals/cumulative.c
+chuffed/globals/cumulativeCalendar.c
 chuffed/globals/disjunctive.c
 chuffed/globals/regular.c
 chuffed/globals/lex.c
 chuffed/globals/table.c
+chuffed/globals/subcircuit.c
 chuffed/mdd/MDD.c
 chuffed/mdd/mdd_prop.c
+chuffed/mdd/MurmurHash3.c
+chuffed/mdd/opcache.c
+chuffed/mdd/weighted_dfa.c
+chuffed/mdd/wmdd_prop.c
 chuffed/mip/mip.c
 chuffed/mip/recalc.c
 chuffed/mip/simplex.c
@@ -202,3 +214,6 @@ chuffed/core/propagator.h
 
 INSTALL(DIRECTORY chuffed DESTINATION include
         PATTERN *.c EXCLUDE)
+
+INSTALL(DIRECTORY chuffed/flatzinc/mznlib/ DESTINATION share/minizinc/chuffed
+        PATTERN *.mzn)
